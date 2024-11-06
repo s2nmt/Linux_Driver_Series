@@ -11,18 +11,23 @@ To cross-compile the led.c file and build it into the led.ko kernel module, foll
     sudo umount /media/rootfs
 - 3 Insert the SD card into the BeagleBone Black, power it on and load the kerbel module with:
 
-    sudo /sbin/insmod led.ko
+    sudo /sbin/insmod led.ko # Led will turn on
 
-The LED will turn on when you use insmod, and it will turn off when you remove the module with rmmod:
+- 4 Remove it
 
-    sudo /sbin/rmmod led.ko
+    sudo /sbin/rmmod led.ko # led will turn off
 
-## export variable to PATH
-### Step1: Open file .bashrc to modify
+## Export variable to PATH
+
+**Step1: Open file .bashrc to modify**
+
 - nano ~/.bashrc
-### Step2: add line into last file
+
+**Step2: add line into last file**
+
 - export PATH=$PATH:/sbin
-### Step3: save and exit
+
+**Step3: save and exit**
 
 ## Apply changes immediately by re-sourcing the file
 - source ~/.bashrc
