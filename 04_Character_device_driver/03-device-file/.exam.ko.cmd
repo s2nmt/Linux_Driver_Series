@@ -1,1 +1,0 @@
-cmd_/home/s2nmt/work/work_space/03-device-file/exam.ko := ld -r  -m elf_x86_64 -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/s2nmt/work/work_space/03-device-file/exam.ko /home/s2nmt/work/work_space/03-device-file/exam.o /home/s2nmt/work/work_space/03-device-file/exam.mod.o;  true

@@ -1,1 +1,0 @@
-cmd_/home/s2nmt/work/work_space/03-device-file/Module.symvers := sed 's/\.ko$$/\.o/' /home/s2nmt/work/work_space/03-device-file/modules.order | scripts/mod/modpost -m -a  -o /home/s2nmt/work/work_space/03-device-file/Module.symvers -e -i Module.symvers   -T -

@@ -1,1 +1,0 @@
-cmd_/home/s2nmt/work/work_space/03-device-file/modules.order := {   echo /home/s2nmt/work/work_space/03-device-file/exam.ko; :; } | awk '!x[$$0]++' - > /home/s2nmt/work/work_space/03-device-file/modules.order
