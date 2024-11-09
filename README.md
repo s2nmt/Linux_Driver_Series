@@ -8,9 +8,17 @@ This repo included:
 - 01 build image beagle bone
 - 02 linux operating system overview
 - 03 blink led
-- 
+  
 ![image](https://github.com/user-attachments/assets/600cdd96-79cd-4ef5-b3d2-665f28f17e7c)
 
+
+shutdown beagle bone black command
+
+  sudo shutdown now
+
+permit read write
+
+  sudo chmod 0777 /dev/m_cdev
 **Author** Minh Tuan
 
  **Date** 02 November, 2024
