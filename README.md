@@ -19,6 +19,17 @@ shutdown beagle bone black command
 permit read write
 
   sudo chmod 0777 /dev/m_cdev
+
+copy
+
+copy into current dir
+
+	cp -r /home/s2nmt/work/work_space/05-control-led .
+
+copy from A to B
+
+	cp -r /home/user/source_folder /home/user/new_folder_name
+
 **Author** Minh Tuan
 
  **Date** 02 November, 2024
