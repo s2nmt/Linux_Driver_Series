@@ -6,8 +6,11 @@ To cross-compile the led.c file and build it into the led.ko kernel module, foll
 - 2 Copy led.ko to an SD card using the following command:
 
     sudo mount /dev/sdb1 /media/rootfs/
+  
     sudo cp led.ko /media/rootfs/home/debian/
+  
     sync
+  
     sudo umount /media/rootfs
 - 3 Insert the SD card into the BeagleBone Black, power it on and load the kerbel module with:
 
