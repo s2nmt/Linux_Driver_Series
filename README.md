@@ -24,11 +24,16 @@ copy
 
 copy into current dir
 
-	cp -r /home/s2nmt/work/work_space/05-control-led .
+  cp -r /home/s2nmt/work/work_space/05-control-led .
 
 copy from A to B
 
 	cp -r /home/user/source_folder /home/user/new_folder_name
+
+compile userspace command
+
+  /home/s2nmt/work/beagle_bone_black/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -o userspace userspace.c
+
 
 **Author** Minh Tuan
 
