@@ -14,17 +14,17 @@ This repo included:
 
 shutdown beagle bone black command
 
-  sudo shutdown now
+  	sudo shutdown now
 
 permit read write
 
-  sudo chmod 0777 /dev/m_cdev
+  	sudo chmod 0777 /dev/m_cdev
 
 copy
 
 copy into current dir
 
-  cp -r /home/s2nmt/work/work_space/05-control-led .
+  	cp -r /home/s2nmt/work/work_space/05-control-led .
 
 copy from A to B
 
@@ -32,7 +32,7 @@ copy from A to B
 
 compile userspace command
 
-  /home/s2nmt/work/beagle_bone_black/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -o userspace userspace.c
+  	/home/s2nmt/work/beagle_bone_black/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -o userspace userspace.c
 
 
 **Author** Minh Tuan
