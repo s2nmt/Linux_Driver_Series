@@ -1,0 +1,9 @@
+menu "Led Module for Device Tree"
+
+config LED_MODULE
+	bool "hello DT"
+	depends on ARM
+	default y if ARM
+	help
+		Basic driver for device tree
+endmenu

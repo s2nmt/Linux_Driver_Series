@@ -1,0 +1,10 @@
+/ {
+	#address-cells = <1>;
+	#size-cells = <1>;
+
+	foo_device{
+		compatible = "gpio_base_myself";
+		led31-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
+		status = "okay";
+	};
+};
