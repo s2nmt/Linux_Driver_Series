@@ -2,7 +2,7 @@
 This folder contains code to implement an LED blink driver on the BeagleBone Black.
 
 To cross-compile the led.c file and build it into the led.ko kernel module, follow these steps:
-- 1 Cross-compile the led.c file on your host machine to generate led.ko.
+- 1 Cross-compile the led.c file on your host machine to generate led.ko (make command in blink_led folder).
 - 2 Copy led.ko to an SD card using the following command:
 
     sudo mount /dev/sdb1 /media/rootfs/
