@@ -1,7 +1,7 @@
 #include <linux/module.h>   /* Define module_init(), module_exit() */
 #include <linux/fs.h>       /* Define alloc_chrdev_region(), register_chrdev_region() */
 
-#define DRIVER_AUTHOR "phonglt9 linuxfromscratch@gmail.com"
+#define DRIVER_AUTHOR "s2nmt"
 #define DRIVER_DESC   "Hello world kernel module"
 #define DRIVER_VERS   "1.0"
 
