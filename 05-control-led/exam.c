@@ -7,7 +7,7 @@
 #include <linux/ioctl.h>    /* Define ioctl macros */
 #include <linux/io.h>
 
-#define DRIVER_AUTHOR "phonglt9 linuxfromscratch@gmail.com"
+#define DRIVER_AUTHOR "Minh Tuan"
 #define DRIVER_DESC   "Hello world kernel module with ioctl"
 #define DRIVER_VERS   "1.0"
 
