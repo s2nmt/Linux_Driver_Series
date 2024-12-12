@@ -79,7 +79,7 @@ To cross-compile the led.c file and build it into the led.ko kernel module, foll
         pr_info("Good bye my friend");
     }
 
-    module_init(led_init); /
+    module_init(led_init); 
     module_exit(led_exit);
 
 - module_init(led_init) is used to define the function that gets called when the module is loaded.
