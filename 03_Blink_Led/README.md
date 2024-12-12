@@ -39,3 +39,49 @@ To cross-compile the led.c file and build it into the led.ko kernel module, foll
 
 ## Apply changes immediately by re-sourcing the file
 - source ~/.bashrc
+
+## Explain code
+
+    #define GPIO_0_ADDR_BASE        0x44E07000
+    #define GPIO_0_ADDR_SIZE        (0x44E07FFF - 0x44E07000)
+
+    #define GPIO_OE_OFFSET                  0x134
+    #define GPIO_CLEARDATAOUT_OFFSET        0x190
+    #define GPIO_SETDATAOUT_OFFSET          0x194
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+
+    static int __init led_init(void)
+    {
+        base_addr = ioremap(GPIO_0_ADDR_BASE,GPIO_0_ADDR_SIZE); // map address physical
+        if(!base_addr){
+            return -ENOMEM;
+        }
+        *(base_addr + GPIO_OE_OFFSET/4) &= ~LED; // enable led output
+        *(base_addr + GPIO_SETDATAOUT_OFFSET/4) |= LED; // turn on led
+
+        pr_info("Hello! Initizliaze successfully!\n");
+
+        return 0;
+    }
+
+    static void __exit led_exit(void)
+    {
+        *(base_addr + GPIO_CLEARDATAOUT_OFFSET / 4) |= LED; // turn off led
+        iounmap(base_addr);
+        pr_info("Good bye my friend");
+    }
+
+    module_init(led_init); /
+    module_exit(led_exit);
+
+- module_init(led_init) is used to define the function that gets called when the module is loaded.
+
+- module_exit(led_exit) is used to define the function that gets called when the module is unloaded.
