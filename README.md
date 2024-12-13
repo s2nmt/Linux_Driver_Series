@@ -34,7 +34,25 @@ compile userspace command
 
   	/home/s2nmt/work/beagle_bone_black/gcc-linaro-6.5.0-2018.12-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc -o userspace userspace.c
 
+check sdcard
 
+    lsblk 
+	
+Mount sdcard
+
+    sudo mount /dev/sdb1 /media/rootfs/
+
+Copy file
+  
+    sudo cp led.ko /media/rootfs/home/debian/
+Sync
+  
+    sync
+
+Umount
+
+    sudo umount /media/rootfs
+	
 **Author** Minh Tuan
 
  **Date** 02 November, 2024
