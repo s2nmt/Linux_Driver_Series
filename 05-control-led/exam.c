@@ -60,12 +60,11 @@ static long m_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
         case IOCTL_FUNC1:
             pr_info("Function 1 called via ioctl\n");
             *(base_addr + GPIO_SETDATAOUT_OFFSET/4) |= LED; 
-	    // Call your function1() here
+
             break;
         case IOCTL_FUNC2:
             pr_info("Function 2 called via ioctl\n");
-	    *(base_addr + GPIO_CLEARDATAOUT_OFFSET / 4) |= LED;
-            // Call your function2() here
+	        *(base_addr + GPIO_CLEARDATAOUT_OFFSET / 4) |= LED;
             break;
         default:
             pr_info("Invalid ioctl command\n");
