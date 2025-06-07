@@ -20,7 +20,7 @@ static const struct of_device_id gpiod_dt_ids[] = {
 static int my_pdrv_probe(struct platform_device *pdev)
 {
     struct device *dev = &pdev->dev;
-    gpio0_31 = gpiod_get(dev, "led30", GPIOD_OUT_LOW);
+    gpio0_31 = gpiod_get(dev, "led31", GPIOD_OUT_LOW);
     gpiod_set_value(gpio0_31, HIGH);
 
     pr_info("%s - %d", __func__, __LINE__);
